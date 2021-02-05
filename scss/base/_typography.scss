@@ -1,10 +1,10 @@
 
 /* ============================================= */
-/*              Base styles                      */
+/*              BASE STYLES                      */
 /* ============================================= */
 
 * {
-  font-family: 'Lato', sans-serif;
+  font-family: $main-font;
   color: $p-color;
   box-sizing: border-box;
 }
@@ -19,7 +19,7 @@ a {
 
 
 /* ============================================= */
-/*              Typography                       */
+/*              TYPOGRAPHY                       */
 /* ============================================= */
 
 .headline-primary {
@@ -44,5 +44,5 @@ a {
   margin-left: 20px;
   padding-left: 20px;
   border-left: 8px solid $borders;
-  border-radius: 5px;
+  border-radius: map-get($border-style, 'quote-border');
 }

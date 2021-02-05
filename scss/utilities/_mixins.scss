@@ -2,3 +2,21 @@
 /*              Mixins                           */
 /* ============================================= */
 
+@mixin center-container {
+  display: map-get($img-placment, 'display');
+  margin-left: map-get($img-placment, 'center-margin');
+  margin-right: map-get($img-placment, 'center-margin');
+  margin-top: map-get($img-placment, 'margin-top');
+  max-width: map-get($img-placment, 'max-width');
+}
+
+// @mixin btn {
+//   margin-top: 15px;
+//   width: 100%;
+//   color: $white-font;
+//   border: none;
+//   padding: 10px 0;
+//   text-transform: uppercase;
+//   border-radius: map-get($border-style, 'display-borders');
+// }
+

@@ -1,33 +1,36 @@
 /* ============================================= */
-/*              Buttons                          */
+/*              BUTTONS                          */
 /* ============================================= */
 
 .btn {
+  // @include btn;
   margin-top: 15px;
   width: 100%;
   color: $white-font;
   border: none;
   padding: 10px 0;
   text-transform: uppercase;
-  border-radius: 5px;
+  border-radius: map-get($border-style, 'display-borders');
 }
 
+
+
 .default {
-  background-color: #51ddfc;
+  background-color: map-get($btn-colors, 'default');
 }
 
 .error {
-  background-color: #e4757a;
+  background-color: map-get($btn-colors, 'error');
 }
 
 .info {
-  background-color: #927bc1;
+  background-color: map-get($btn-colors, 'info');
 }
 
 .success {
-  background-color: #63cc82;
+  background-color: map-get($btn-colors, 'success');
 }
 
 .warning {
-  background-color: #fd7856;
+  background-color: map-get($btn-colors, 'warning');
 }

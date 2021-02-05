@@ -1,5 +1,14 @@
 /* ============================================= */
-/*              Variables                        */
+/*              VARIABLES                        */
+/* ============================================= */
+
+//Font-family
+$main-font: 'Lato', sans-serif;
+
+
+
+/* ============================================= */
+/*              COLORS                           */
 /* ============================================= */
 
 //Gross font color (Includes 'Grid System')
@@ -16,6 +25,39 @@ $white-font: #fff;
 $headline-primary: #58e1c1;
 $borders: #58e1c1;
 
+//Image border
+$img-border: #ccc; 
+
+/* ============================================= */
+/*              GROSS BORDER RADIUS STYLING      */
+/* ============================================= */
+
+//Radius adjustment of 'buttons' and 'grid system'
+$border-style: (
+  'quote-border': 5px,
+  'display-borders': 5px
+);
 
 
+/* ============================================= */
+/*              IMAGES PLACEMENT                 */
+/* ============================================= */
 
+$img-placment: (
+    'display': block,
+    'center-margin': auto,
+    'margin-top': 10px,
+    'max-width': 100%,
+);
+
+/* ============================================= */
+/*              BUTTONS SECTION                  */
+/* ============================================= */
+
+$btn-colors: (
+  'default': #51ddfc,
+  'success': #63cc82,
+  'error': #e4757a,
+  'warning': #fd7856,
+  'info': #927bc1
+);
