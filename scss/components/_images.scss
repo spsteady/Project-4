@@ -4,29 +4,15 @@
 
 .img-avatar {
   @include center-container;
-  // display: block;
-  // margin-left: auto;
-  // margin-right: auto;
-  // margin-top: 10px;
-  // max-width: 100%; 
   max-height: 100%;
 }
 
 .img-frame {
   @include center-container;
-  // display: block;
-  // margin-left: auto;
-  // margin-right: auto;
-  // margin-top: 10px;
-  // max-width: 100%;
   padding: 13px;
   border: 1px solid $img-border;
 }
 
 .img-logo {
   @include center-container;
-
-  // display: block;
-  // margin-left: auto;
-  // margin-right: auto;
 }

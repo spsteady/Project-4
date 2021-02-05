@@ -3,11 +3,11 @@
 /* ============================================= */
 
 @mixin center-container {
-  display: map-get($img-placment, 'display');
-  margin-left: map-get($img-placment, 'center-margin');
-  margin-right: map-get($img-placment, 'center-margin');
-  margin-top: map-get($img-placment, 'margin-top');
-  max-width: map-get($img-placment, 'max-width');
+  display: map-get($img-placement, 'display');
+  margin-left: map-get($img-placement, 'center-margin');
+  margin-right: map-get($img-placement, 'center-margin');
+  margin-top: map-get($img-placement, 'margin-top');
+  max-width: map-get($img-placement, 'max-width');
 }
 
 @mixin btn {
@@ -18,18 +18,30 @@
   padding: 10px 0;
   text-transform: uppercase;
   border-radius: map-get($border-style, 'display-borders');
-  &:hover {
-    background-color: lighten(map-get($btn-colors, default), 25%)
-  }
 }
-
-// I am having issues with getting the color to pass through...I had previously had it all good by deleting the code below and using the _buttons code that I currently have commented out, BUT after putting that on the back-burner I tried to apply the lighten() to the _buttons.  Realized I was having a similar issue, which lead me back to the buttons MIXIN to get them all groupd together to apply colors and hover.
 
 @mixin buttons($map) {
   @each $btn-color, $color in $map {
-    &-#{$btn-color} {
-      color: $color;
+    &.#{$btn-color} {
+      background-color: $color;
+      &:hover {
+        background-color: lighten($color, 20%);
+      }
     }
-  } 
+  }
 }
 
+@mixin grid($map) {
+  @each $grid-section-color, $color in $map{
+    &.#{$grid-section-color} {
+      background-color: $color;
+    }
+  }
+}
+
+
+
+
+
+
+   

@@ -2,28 +2,8 @@
 /*              BUTTONS                          */
 /* ============================================= */
 
+
 .btn {
   @include btn;  
-  @include buttons;
+  @include buttons($btn-colors);
 }
-
-// .default {
-//   background-color: map-get($btn-colors, 'default');
-// }
-
-// .error {
-//   background-color: map-get($btn-colors, 'error');
-// }
-
-// .info {
-//   background-color: map-get($btn-colors, 'info');
-// }
-
-// .success {
-//   background-color: map-get($btn-colors, 'success');
-// }
-
-// .warning {
-//   background-color: map-get($btn-colors, 'warning');
-// }
-
