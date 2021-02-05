@@ -10,13 +10,26 @@
   max-width: map-get($img-placment, 'max-width');
 }
 
-// @mixin btn {
-//   margin-top: 15px;
-//   width: 100%;
-//   color: $white-font;
-//   border: none;
-//   padding: 10px 0;
-//   text-transform: uppercase;
-//   border-radius: map-get($border-style, 'display-borders');
-// }
+@mixin btn {
+  margin-top: 15px;
+  width: 100%;
+  color: $white-font;
+  border: none;
+  padding: 10px 0;
+  text-transform: uppercase;
+  border-radius: map-get($border-style, 'display-borders');
+  &:hover {
+    background-color: lighten(map-get($btn-colors, default), 25%)
+  }
+}
+
+// I am having issues with getting the color to pass through...I had previously had it all good by deleting the code below and using the _buttons code that I currently have commented out, BUT after putting that on the back-burner I tried to apply the lighten() to the _buttons.  Realized I was having a similar issue, which lead me back to the buttons MIXIN to get them all groupd together to apply colors and hover.
+
+@mixin buttons($map) {
+  @each $btn-color, $color in $map {
+    &-#{$btn-color} {
+      color: $color;
+    }
+  } 
+}
 

@@ -3,34 +3,27 @@
 /* ============================================= */
 
 .btn {
-  // @include btn;
-  margin-top: 15px;
-  width: 100%;
-  color: $white-font;
-  border: none;
-  padding: 10px 0;
-  text-transform: uppercase;
-  border-radius: map-get($border-style, 'display-borders');
+  @include btn;  
+  @include buttons;
 }
 
+// .default {
+//   background-color: map-get($btn-colors, 'default');
+// }
 
+// .error {
+//   background-color: map-get($btn-colors, 'error');
+// }
 
-.default {
-  background-color: map-get($btn-colors, 'default');
-}
+// .info {
+//   background-color: map-get($btn-colors, 'info');
+// }
 
-.error {
-  background-color: map-get($btn-colors, 'error');
-}
+// .success {
+//   background-color: map-get($btn-colors, 'success');
+// }
 
-.info {
-  background-color: map-get($btn-colors, 'info');
-}
+// .warning {
+//   background-color: map-get($btn-colors, 'warning');
+// }
 
-.success {
-  background-color: map-get($btn-colors, 'success');
-}
-
-.warning {
-  background-color: map-get($btn-colors, 'warning');
-}
