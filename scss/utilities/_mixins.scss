@@ -2,10 +2,11 @@
 /*              Mixins                           */
 /* ============================================= */
 
+
 @mixin center-container {
   display: map-get($img-placement, 'display');
-  margin-left: map-get($img-placement, 'center-margin');
-  margin-right: map-get($img-placement, 'center-margin');
+  margin-left: map-get($img-placement, 'margin-left');
+  margin-right: map-get($img-placement, 'margin-right');
   margin-top: map-get($img-placement, 'margin-top');
   max-width: map-get($img-placement, 'max-width');
 }
@@ -25,7 +26,8 @@
     &.#{$btn-color} {
       background-color: $color;
       &:hover {
-        background-color: lighten($color, 20%);
+        background-color: lighten($color, 15%);
+        transition: background-color .2s ease-in .4s;
       }
     }
   }
@@ -38,10 +40,3 @@
     }
   }
 }
-
-
-
-
-
-
-   
